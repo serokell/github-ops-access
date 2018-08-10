@@ -1,0 +1,29 @@
+resolver: lts-11.14
+nixpkgs:
+  url: "https://github.com/kirelagin/nixpkgs/archive/14fe3f881faa373c228a092c222c1c7c3532c82c.tar.gz"
+  sha256: "0wx5srx0z3ixjfj7sg7xaw829mdmhk0hnr9q394fpmk1qh418av0"
+
+packages:
+  github-ops-access: .
+
+extra-deps:
+  github:
+    git: https://github.com/serokell/github
+    rev: 445f297649e1e887d76d637014bf8df32fd64762
+    sha256: 1x1dhkvl04rhwlvrbzlkkcan7730f06pdrp6qr2jwvgmr7jknisd
+  github-app:
+    git: https://github.com/serokell/github-app
+    rev: a35bbbe40f333bb6db6c941d54caa695e6f92351
+    sha256: 0yzxwd4wrfg24s8qr03w997aibv78dibqixdq3dqjlafiaw8ygqa
+  github-webhooks:
+    git: https://github.com/serokell/github-webhooks
+    rev: d6054be19b7e2d82869b3195a401dbb1c4107bff
+    sha256: 1kmadnw4hizsd3ib5wrmv0qnxhlic8yca5jllmdna2cg1jlaqgd9
+  jwt:
+    git: https://github.com/serokell/haskell-jwt
+    rev: e9a6304915633f8549e3322efcfa343ed69c43ed
+    sha256: 01xr4g71qib3wq2f8vwspk0bw2vnbyi9hjxv5cjfn7pxzlg1ndda
+  servant-github-webhook:
+    git: https://github.com/serokell/servant-github-webhook
+    rev: 6f99edc3e1c552c3f3749b21126d638f26a0f2b1
+    sha256: 0d61rrdr19qzg5bhb01x6y2phyzyqrvrgcpjcgqv5vaxf55hxifb

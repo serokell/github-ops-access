@@ -1,0 +1,16 @@
+resolver: lts-11.14
+
+packages:
+  - .
+
+extra-deps:
+  - git: https://github.com/serokell/github
+    commit: 445f297649e1e887d76d637014bf8df32fd64762
+  - git: https://github.com/serokell/github-app
+    commit: a35bbbe40f333bb6db6c941d54caa695e6f92351
+  - git: https://github.com/serokell/github-webhooks
+    commit: d6054be19b7e2d82869b3195a401dbb1c4107bff
+  - git: https://github.com/serokell/haskell-jwt
+    commit: e9a6304915633f8549e3322efcfa343ed69c43ed
+  - git: https://github.com/serokell/servant-github-webhook
+    commit: 6f99edc3e1c552c3f3749b21126d638f26a0f2b1

@@ -1,0 +1,60 @@
+name: github-ops-access
+version: 0.0.0
+
+default-extensions:
+  - ApplicativeDo
+  - DataKinds
+  - DeriveGeneric
+  - FlexibleContexts
+  - FlexibleInstances
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - MultiParamTypeClasses
+  - NamedFieldPuns
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - PatternSynonyms
+  - RankNTypes
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TemplateHaskell
+  - TupleSections
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+
+library:
+  source-dirs: lib
+
+  dependencies:
+    - base
+
+    - mtl
+    - transformers
+
+executables:
+  webhook:
+    source-dirs: webhook
+    main: Main.hs
+
+    dependencies:
+      - base
+      - universum
+
+      - github-ops-access
+
+      - bytestring
+      - containers
+      - cryptonite
+      - github
+      - github-app
+      - github-webhooks
+      - servant
+      - servant-generic
+      - servant-server
+      - servant-github-webhook
+      - text
+      - warp
+
+    ghc-options:
+      - -threaded
